@@ -2,4 +2,12 @@
 
 import prompt
 
-welcome_user = prompt.string('May I have your name? ')
+def welcome_user():
+    name = prompt.string('May I have your name? ')
+    print(f"Hello, {name}!")
+
+
+#def welcome_user():
+    #print('May I have your name? ')
+    #name = input()
+    #print('Hello, ', name, end='!\n')
