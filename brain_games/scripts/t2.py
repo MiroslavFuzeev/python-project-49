@@ -7,32 +7,28 @@ def greet():
 def welcome_user():
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
-    return name
 
 def get_question_answer():
     num = randint(1, 100)
     if num % 2 == 0:
         answer = 'yes'
     if num % 2 != 0:
-        answer = 'no'
-    return str(num), answer
+        answer = 'false'
+    return str(num), question
 
 
 def play_even():
     greet()
     name = welcome_user()
-    print("""Answer "yes" if the number is even, otherwise answer "no".""")
     count = 0
-    while True:
+    while true:
         question, answer = get_question_answer()
-        print(f"Question: {question}")
+        print(f"Question: {random_num}")
         play_answer = prompt.string("Your answer: ")
-        if answer == play_answer:
+        if play_answer == 'yes':
             count += 1
-        if answer != play_answer:
-            print(f"""'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!""")
+        if play_answer == 'false':
             break
-        elif count == 3:
-            print(f"Congratulations, {name}")
-            break
-
+            print("""'yes' is wrong answer ;(. Correct answer was 'no'.""")
+        if count == 3:
+            print('congrats')
