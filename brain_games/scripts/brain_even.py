@@ -1,13 +1,16 @@
 from random import randint
 import prompt
 
+
 def greet():
     print('Welcome to the Brain Games!')
+
 
 def welcome_user():
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
     return name
+
 
 def get_question_answer():
     num = randint(1, 100)
@@ -35,4 +38,3 @@ def play_even():
         elif count == 3:
             print(f"Congratulations, {name}")
             break
-
