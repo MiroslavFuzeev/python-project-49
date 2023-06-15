@@ -1,2 +1,0 @@
-def module():
-    print('success')
