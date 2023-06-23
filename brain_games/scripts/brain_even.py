@@ -25,16 +25,16 @@ def play_even():
     greet()
     name = welcome_user()
     print("""Answer "yes" if the number is even, otherwise answer "no".""")
-    count = 0
+    count_correct_answer = 0
     while True:
         question, answer = get_question_answer()
         print(f"Question: {question}")
         play_answer = prompt.string("Your answer: ")
         if answer == play_answer:
-            count += 1
+            count_correct_answer += 1
         if answer != play_answer:
             print(f"""'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!""")
             break
-        elif count == 3:
+        elif count_correct_answer == 3:
             print(f"Congratulations, {name}")
             break
