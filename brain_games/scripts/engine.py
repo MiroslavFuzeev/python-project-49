@@ -15,13 +15,13 @@ def welcome_user():
     return name
 
 
-def run_game():
+def run_game(rules, func_get_question_answer):
     greet()
     name = welcome_user()
-    print (RULES)
     count_correct_answer = 0
+    print(rules)
     while True:
-      question, answer = get_question_answer()
+      question, answer = func_get_question_answer()
       print(f'Question: {question}')
       user_answer = prompt.string('Your answer: ')
       if user_answer == str(answer):
@@ -36,6 +36,3 @@ def run_game():
         print(f"Congratulations, {name}")
         break
 
-
-if __name__ == "__main__":
-    run_game()

@@ -18,4 +18,3 @@ def get_question_answer():
     return  question, answer
 
 RULES = "What is the result of the expression?"
-
