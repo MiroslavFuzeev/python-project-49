@@ -1,3 +1,11 @@
+# Hi there!
+## You can play 5 games here: 
+### brain-even 
+### brain-calc 
+### brain-gcd 
+### brain-progression 
+### brain-prime
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/MiroslavFuzeev/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/MiroslavFuzeev/python-project-49/actions)
 
