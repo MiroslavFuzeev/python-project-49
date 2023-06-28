@@ -2,8 +2,14 @@ from random import randint
 from math import sqrt
 import prompt
 
+
+RULES = '''Answer "yes" if given number is prime. Otherwise answer "no".'''
+
+limit_1 = 1
+limit_2 = 100
+
 def get_question_answer():
-    question = randint(1, 100)
+    question = randint(limit_1, limit_2)
     prime = True
     i = 2
     while i <= sqrt(question):
@@ -17,4 +23,3 @@ def get_question_answer():
         answer = 'no'
     return question, answer
 
-RULES = '''Answer "yes" if given number is prime. Otherwise answer "no".'''

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from brain_games.scripts.engine import run_game
+from brain_games.engine import run_game
 from brain_games.games.progression import get_question_answer, RULES
 
 def main():

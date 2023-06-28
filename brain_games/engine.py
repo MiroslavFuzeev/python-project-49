@@ -5,19 +5,10 @@ from random import choice
 import prompt
 
 
-def greet():
+def run_game(rules, func_get_question_answer):
     print('Welcome to the Brain Games!')
-
-
-def welcome_user():
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
-    return name
-
-
-def run_game(rules, func_get_question_answer):
-    greet()
-    name = welcome_user()
     count_correct_answer = 0
     print(rules)
     while True:
@@ -31,8 +22,8 @@ def run_game(rules, func_get_question_answer):
         print(f"'{user_answer}' is wrong answer ;(."
           f"Correct answer was '{answer}'.\n"
           f"Let's try again, {name}!")
-        exit()
+        break
       elif count_correct_answer == 3:
-        print(f"Congratulations, {name}")
+        print(f"Congratulations, {name}!")
         break
 
