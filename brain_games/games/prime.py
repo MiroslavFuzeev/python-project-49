@@ -5,11 +5,11 @@ import prompt
 
 RULES = '''Answer "yes" if given number is prime. Otherwise answer "no".'''
 
-limit_1 = 1
-limit_2 = 100
+LIMIT_1 = 1
+LIMIT_2 = 100
 
 def get_question_answer():
-    question = randint(limit_1, limit_2)
+    question = randint(LIMIT_1, LIMIT_2)
     prime = True
     i = 2
     while i <= sqrt(question):

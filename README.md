@@ -1,10 +1,15 @@
 # Hi there!
 ## You can play 5 games here: 
-### brain-even 
-### brain-calc 
-### brain-gcd 
-### brain-progression 
-### brain-prime
+#### brain-even
+_The essence of the game is this: the user is shown a random number. And he needs to answer yes if the number is even, or no if the number is odd._
+#### brain-calc
+_The essence of the game is the following: the user is shown a random mathematical expression, for example, 35 + 16, which is to calculate and write the correct answer._
+#### brain-gcd
+_The essence of the game is this: the user is shown two random numbers, for example 25 50. The user must calculate and enter the greatest common divisor of these numbers._
+#### brain-progression
+_The essence of the game is this: We show the player a series of numbers that form an arithmetic progression, replacing any of the numbers with two points. The player must determine this number._
+#### brain-prime
+_The essence of the game is this: Answer "yes" if given number is prime. Otherwise answer "no"._
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/MiroslavFuzeev/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/MiroslavFuzeev/python-project-49/actions)

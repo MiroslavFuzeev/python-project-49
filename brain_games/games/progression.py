@@ -6,20 +6,20 @@ import math
 
 RULES = "What number is missing in the progression?"
 
-limit_1 = 1
-limit_2 = 100
+LIMIT_1 = 1
+LIMIT_2 = 100
 
-int_lim_1 = 1
-int_lim_2 = 10
+INT_LIM_1 = 1
+INT_LIM_2 = 10
 
-list_len_lim_1 = 5
-list_len_lim_2 = 10
+LIST_LEN_LIM_1 = 5
+LIST_LEN_LIM_2 = 10
 
 
 def get_question_answer():
-    num = randint(limit_1, limit_2)
-    intrval = randint(int_lim_1, int_lim_2)
-    list_len = randint(list_len_lim_1, list_len_lim_2)
+    num = randint(LIMIT_1, LIMIT_2)
+    intrval = randint(INT_LIM_1, INT_LIM_2)
+    list_len = randint(LIST_LEN_LIM_1, LIST_LEN_LIM_2)
     num2 = num + intrval*list_len
     mylist = range(num, num2, intrval)
     question = [i for i in mylist]
