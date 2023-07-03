@@ -17,6 +17,20 @@ _The essence of the game is this: Answer "yes" if given number is prime. Otherwi
 [![Maintainability](https://api.codeclimate.com/v1/badges/7b7be59841192f8d8bec/maintainability)](https://codeclimate.com/github/MiroslavFuzeev/python-project-49/maintainability)
 
 ### About The Project Installation Usage
+_To install the package, use the following commands:_
+1. git clone 
+2. make build publish package-install
+3. enjoy
+
+_To add game:_ 
+1. add file ....py to "games" directory. Must contain only game logic (get_question_answer() and constants)
+2. add file brain_....py to "scripts" directory. Must contain only game logic (main())
+3. make import settings following the examples 
+4. add new dependency into pyproject.toml section: \[tool.poetry.scripts\]
+5. delite dist/ directory
+6. make build publish package-install
+
+### Watch how to play the games: 
 [Asciinema_brain_even](https://asciinema.org/a/5bTU5bZmuf8fbYlyqktx9emoN)
 
 [Asciinema_brain_calc](https://asciinema.org/a/HiMZtYnkrRm8oXNOh2TgzFI01)
