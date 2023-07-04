@@ -1,17 +1,14 @@
 from random import randint
 from random import choice
-import prompt
-import math
 
 
 RULES = "What number is missing in the progression?"
 
+
 LIMIT_1 = 1
 LIMIT_2 = 100
-
 INT_LIM_1 = 1
 INT_LIM_2 = 10
-
 LIST_LEN_LIM_1 = 5
 LIST_LEN_LIM_2 = 10
 
