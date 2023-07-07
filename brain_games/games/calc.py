@@ -28,4 +28,4 @@ def get_question_answer():
     rand_simb_list = choice(simb_list)
     question = str(num) + rand_simb_list + str(num2)
     answer = calculate_answer(num, num2, rand_simb_list)
-    return  question, answer
+    return  question, str(answer)

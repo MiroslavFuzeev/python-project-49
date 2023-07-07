@@ -10,7 +10,7 @@ LIMIT_2 = 100
 
 
 def get_question_answer():
-    question = randint(LIMIT_1, LIMIT_2)
+    question = str(randint(LIMIT_1, LIMIT_2))
     prime = True
     i = 2
     while i <= sqrt(question):
