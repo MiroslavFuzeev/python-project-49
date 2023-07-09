@@ -9,17 +9,17 @@ LIMIT_1 = 1
 LIMIT_2 = 100
 
 
+def is_prime(number: int) -> bool:
+    if number <= 1:
+        return False
+    for i in range(2, int(number ** 0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
+    
+
 def get_question_answer():
     question = randint(LIMIT_1, LIMIT_2)
-    prime = True
-    i = 2
-    while i <= sqrt(question):
-        if question % i == 0:
-            prime = False
-            break
-        i += 1
-    if prime:
-        answer = 'yes'
-    else:
-        answer = 'no'
+    prime = is_prime(question)
+    answer = 'yes' if prime else 'no'
     return str(question), answer

@@ -12,7 +12,7 @@ LIMIT_2 = 100
 def get_question_answer():
     num = randint(LIMIT_1, LIMIT_2)
     num2 = randint(LIMIT_1, LIMIT_2)
-    question = num, num2
-    question = str(question)
+    question = f'{num},{num2}'
     answer = math.gcd(num, num2)
-    return question, str(answer)
+    answer = f"{answer}"
+    return question, answer
