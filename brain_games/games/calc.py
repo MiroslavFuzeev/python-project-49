@@ -24,8 +24,8 @@ def calculate_answer(num, num2, rand_simb_list):
 def get_question_answer():
     num = randint(LIMIT_1, LIMIT_2)
     num2 = randint(LIMIT_1, LIMIT_2)
-    simb_list = [' + ', ' - ' , ' * ']
+    simb_list = [' + ', ' - ', ' * ']
     rand_simb_list = choice(simb_list)
     question = str(num) + rand_simb_list + str(num2)
     answer = calculate_answer(num, num2, rand_simb_list)
-    return  question, str(answer)
+    return question, str(answer)

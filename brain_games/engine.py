@@ -18,8 +18,8 @@ def run_game(rules, func_get_question_answer):
             count_correct_answer += 1
         if user_answer != str(answer):
             print(f"'{user_answer}' is wrong answer ;(."
-              f"Correct answer was '{answer}'.\n"
-              f"Let's try again, {name}!")
+                  f"Correct answer was '{answer}'.\n"
+                  f"Let's try again, {name}!")
             break
         elif count_correct_answer == 3:
             print(f"Congratulations, {name}!")

@@ -1,5 +1,4 @@
 from random import randint
-from math import sqrt
 
 
 RULES = '''Answer "yes" if given number is prime. Otherwise answer "no".'''
@@ -16,7 +15,7 @@ def is_prime(number: int) -> bool:
         if number % i == 0:
             return False
     return True
-    
+
 
 def get_question_answer():
     question = randint(LIMIT_1, LIMIT_2)
