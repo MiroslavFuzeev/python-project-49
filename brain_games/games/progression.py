@@ -23,4 +23,5 @@ def get_question_answer():
     answer = choice(question)
     answer_index = question.index(answer)
     question[answer_index] = '..'
+    question = ' '.join(str(x) for x in question)
     return question, str(answer)
