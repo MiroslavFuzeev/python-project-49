@@ -17,7 +17,7 @@ def get_question_answer():
     num = randint(LIMIT_1, LIMIT_2)
     intrval = randint(INT_LIM_1, INT_LIM_2)
     list_len = randint(LIST_LEN_LIM_1, LIST_LEN_LIM_2)
-    num2 = num + intrval*list_len
+    num2 = num + intrval * list_len
     mylist = range(num, num2, intrval)
     question = [i for i in mylist]
     answer = choice(question)
